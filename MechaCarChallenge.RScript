@@ -1,0 +1,8 @@
+> library(dplyr) # load dplyr package
+> mpg_table <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F) # read data file into R Environment
+> mpg_matrix <- as.matrix(mpg_table[c("vehicle_length", "vehicle_weight", "spoiler_angle", "ground_clearance", "AWD", "mpg")]) #convert data frame to numeric matrix
+> cor(mpg_matrix) # calculate correlation coefficient of matrix
+> lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mpg_table) #generate multiple linear regression model
+> summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mpg_table)) #generate summary statistics
+
+
