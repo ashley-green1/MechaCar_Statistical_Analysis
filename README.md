@@ -59,14 +59,24 @@ We want to determine if all manufacturing lots and each lot individually are sta
 #### All Manufacturing lots
 ![All_Lots_TTest](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/one_sample_ttest.png)
 
+At a significance level of the common 0.05 percent, our p-value of 0.06 is above the significance level.  Therefore, we do not have sufficient evidence to reject that there is a statistical difference between All Manufactuting lots and the population mean.  The two means are statistically similar.
+
 #### Lot 1
 ![Lot1_TTest](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/lot1_ttest.png)
+
+At a significance level of the common 0.05 percent, our p-value of 1.0 is above the significance level.  Therefore, we do not have sufficient evidence to reject that there is a statistical difference between Lot 1 and the population mean.  The two means are statistically similar.
 
 #### Lot 2
 ![Lot2_TTest](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/lot2_ttest.png)
 
+At a significance level of the common 0.05 percent, our p-value of 0.61 is above the significance level.  Therefore, we do not have sufficient evidence to reject that there is a statistical difference between Lot 2 and the population mean.  The two means are statistically similar.
+
 #### Lot 3
 ![Lot3_TTest](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/lot3_ttest.png)
+
+At a significance level of the common 0.05 percent, our p-value of 0.042 is below the significance level.  There is sufficient statistical evidence to reject that there is a statistical difference between Lot 3 and the population mean. The two means are statistically different. 
+
+## Study Design: MechaCar vs Competition
 
 
 
