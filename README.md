@@ -15,7 +15,7 @@ There are no variables that share what is considered a strong correlation (1>= a
 
 ![Correlation_Coefficient_Matrix](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/corr_coeff_matrix.png)
 
-Correlation Coefficient Matrix Highlights
+####Correlation Coefficient Matrix Highlights
 - "MPG" and "Vehicle Length" share a moderate correlation of 0.61, which is the strongest of all variables, with "MPG" and "Ground Clearance" coming in second at a weak-moderate correlation level of 0.33.
 - When we square the Vehicle Length coefficient, we get R-squared of approximately 0.37.  This indicates that Vehicle length will only predict about 37% of mpg observations.   
 
@@ -23,8 +23,32 @@ We should run a Multiple Linear Regression model to test for more prediction rel
 
 ![MPG Summary Statistics](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/mpg_summary_statistics.png)
 
-Multiple Linear Regression Highlights
+#### Multiple Linear Regression Highlights
 - According to our results, vehicle length and ground clearance (as well as intercept) are statistically unlikely to provide random amounts of variance to the linear model.  In other words the vehicle length and ground clearance have a significant impact on mpg.
 - In addition, the p-value of our linear regression analysis is 5.35e-11, which is much smaller than our assumed significance level of 0.05%.  Therefore, we can state that there is sufficient evidence to reject our null hypothesis, which means that the slope of our linear model is not zero.
 - R-squared of approximately 0.71.  This indicates that the multiple linear regression will predict 71% of mpg observations.
+
+
+## Summary Statistics on Suspension Coils
+
+The design specification for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch (PSI).  We want to confirm that the manufacturing data meets this design specification for all manufacturing lots in total and each lot individually.
+
+Weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots in the Suspension_Coil.csv dataset.  The dataset is comprised of the PSI metric for 150 vehicles produced at 3 lots. 
+
+#### Total Summary Table
+![Total Summary](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/total_summary.png)
+
+#### Lot Summary Table
+![Lot_Summary](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/lot_summary.png)
+
+#### PSI Summary Results
+
+- Per the Total Summary above, PSI Variance for all lots combined is 62.29 pounds per square inch. This satisfies the design specification requirements.
+- Per the Lot Summary above, PSI Variance for Lots 1 thru 3 yield 0.98, 7.47 and 170.29 pounds per square inch respectively. 
+
+Initially, we are inclined to believe that lot 3 is doing something wrong, as it is the only lot that exceeds the 100lb weight capacity.  However, looking at the Median and Mean, we can see that the data is Left Skewed which indicates there is a higher probability that lower weights exist at this location than others.  This is evidenced by the Standard Deviation being higher for this location as well. 
+
+We recommend that the manufacturing team revisit its approach with vehicle allocation to these lots in order to normalize distributions so they each meet the design specifications. 
+
+## 
 
