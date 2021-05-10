@@ -13,3 +13,11 @@
 > total_summary <- suspension_table %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI)) # Summarize PSI data
 > lot_summary <- suspension_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups='keep') # Summarize and Group PSI data by lot
 
+# Deliverable 3
+> t.test(suspension_table$PSI, mu = 1500) # compare 3 Lot sample versus population mean
+> lot1 <- subset(suspension_table, Manufacturing_Lot=='Lot1') # subset variable for Lot 1
+> lot2 <- subset(suspension_table, Manufacturing_Lot=='Lot2') # subset variable for Lot 2
+> lot3 <- subset(suspension_table, Manufacturing_Lot=='Lot3') # subset variable for Lot 3
+> t.test(lot1$PSI, mu = 1500) # compare Lot 1 versus population mean
+> t.test(lot2$PSI, mu = 1500) # compare Lot 2 versus population mean
+> t.test(lot3$PSI, mu = 1500) # compare Lot 3 versus population mean
