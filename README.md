@@ -50,5 +50,23 @@ Initially, we are inclined to believe that lot 3 is doing something wrong, as it
 
 We recommend that the manufacturing team revisit its approach with vehicle allocation to these lots in order to normalize distributions so they each meet the design specifications. 
 
-## 
+## T-Tests on Suspension Coils
+
+We want to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.  Using our knowledge of R, we will perform t-tests to calculate the p-value and compare it against a significance level of 0.05.
+
+#### Here are the T-Test results:
+
+#### All Manufacturing lots
+![All_Lots_TTest](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/one_sample_ttest.png)
+
+#### Lot 1
+![Lot1_TTest](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/lot1_ttest.png)
+
+#### Lot 2
+![Lot2_TTest](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/lot2_ttest.png)
+
+#### Lot 3
+![Lot3_TTest](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/lot3_ttest.png)
+
+
 
