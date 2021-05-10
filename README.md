@@ -2,7 +2,7 @@
 
 ## Overview
 
-MechaCar, AutosRU's newest prototype, is suffering from production troubles that are costly and run the risk of failing the teams deadlines.
+MechaCar, AutosRU's newest prototype, is suffering from production troubles that are costly and run the risk of failing the team's deadlines.
 
 The purpose of this analysis is to review production data for insights that may help circumvent manufacturing risks.
 
@@ -79,4 +79,28 @@ At a significance level of the common 0.05 percent, our p-value of 0.042 is belo
 ## Study Design: MechaCar vs Competition
 
 
+In order to ensure the new MechaCar prototype is a success, we should evaluate how it stands up to the competition.  Lets design a potential study that will provide statistical insight to how the MechaCar performs vs competition. 
 
+### Metrics
+The metrics to test are both city and highway fuel efficiency.
+
+### Hypothesis
+Null: MechaCar has the same fuel efficiency for each cylinder class.
+Alternate: MechaCar does not have the same fuel efficiency for each cylinder class.
+
+### Statistical Tests
+I would use linear regression and 2 Sample T-Tests to test the hypothesis against the population mean for each metric.
+
+
+# Data
+
+Gathering the proper variables is a great start to our analysis.
+
+I recommend the following data variables:
+Manufacturer (mfg)
+Engine Size (cyl)
+Highway Fuel Efficiency (hwy)
+City Fuel Efficiency (cty)
+Model
+Year
+Cost
