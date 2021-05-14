@@ -15,7 +15,7 @@ There are no variables that share what is considered a strong correlation (1>= a
 
 ![Correlation_Coefficient_Matrix](https://github.com/ashley-green1/MechaCar_Statistical_Analysis/blob/main/resources/corr_coeff_matrix.png)
 
-####Correlation Coefficient Matrix Highlights
+#### Correlation Coefficient Matrix Highlights
 - "MPG" and "Vehicle Length" share a moderate correlation of 0.61, which is the strongest of all variables, with "MPG" and "Ground Clearance" coming in second at a weak-moderate correlation level of 0.33.
 - When we square the Vehicle Length coefficient, we get R-squared of approximately 0.37.  This indicates that Vehicle length will only predict about 37% of mpg observations.   
 
